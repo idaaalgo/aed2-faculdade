@@ -8,8 +8,6 @@ A divisão não pode ocorrer se o divisor for zero
 
 *******************************************************************************/
 #include <stdio.h>
-
-
 /*A função retornaDivisao recebe dividendo e divisor
 e retorna o resultado de dividendo/divisor.
 Se o valor do divisor seja diferente de 0
@@ -23,8 +21,7 @@ float retornaDivisao(int dividendo, int divisor) {
     return (float)dividendo/divisor;
 }
 
-void main() {
-    
+void main() {  
     int dividendo, divisor;
    //Entrada de dados.
     printf("Entre com o valor do dividendo: ");
