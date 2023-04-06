@@ -9,10 +9,7 @@ números inteiros digitados pelo usuário.
 #include <stdio.h>
 
 int retornaDiferenca(int a, int b) {
-    if(a>b){
-        return a-b;    
-    }
-    return b-a;
+    return a-b;
 }
 
 void main() {
