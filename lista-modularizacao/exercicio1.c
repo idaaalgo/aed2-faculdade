@@ -8,16 +8,12 @@ números inteiros digitados pelo usuário.
 
 *******************************************************************************/
 #include <stdio.h>
-
-
 /*Função retornaDiferenca, receberá dois pârametros(a, b) e irá retornar
 a subtração de a e b*/
 int retornaDiferenca(int a, int b) {
     return a-b;
 }
-
-void main() {
-    
+void main() {  
     int a, b, diferenca;
 //Entrada de dados
     printf("Entre com o valor do primeiro número: ");
@@ -29,5 +25,4 @@ retornaDiferenca*/
     diferenca = retornaDiferenca(a, b);
 //Saída do programa
     printf("A diferença de %d e %d é %d", a, b, diferenca);
-    
 }
