@@ -17,8 +17,10 @@ a função ocorre normalmente, caso contrário
 a função retorna 0*/
 float retornaDivisao(int dividendo, int divisor) {
     if(divisor==0){
-        printf("Valor de divisor 0 é inválido");
-        return 0;
+        while(divisor == 0) {
+            printf("Valor de divisor 0 é inválido!\nDigite novamente outro valor: ");
+            scanf("%d", &divisor);
+        }
     }
     return (float)dividendo/divisor;
 }
@@ -35,8 +37,5 @@ void main() {
    e guarda o resultado para si*/
     float resultado = retornaDivisao(dividendo, divisor);
 //Saída
-  //Imprime somente a mensagem de resultado caso o valor de divisor !=0
-    if(divisor != 0) {
-        printf("A divisão de %d por %d é %.3f", dividendo, divisor, resultado);
-    }
+    printf("A divisão de %d por %d é %.3f", dividendo, divisor, resultado);
 }
