@@ -31,9 +31,6 @@ void main() {
     scanf("%d", &dividendo);
     printf("Entre com o valor do divisor diferente de 0: ");
     scanf("%d", &divisor);
-   /*A variável resultado chama a função retornaDivisao
-   e guarda o resultado para si*/
-    float resultado = retornaDivisao(dividendo, divisor);
-//Saída
-    printf("A divisão de %d por %d é %.3f", dividendo, divisor, resultado);
+    //Saída
+    printf("A divisão de %d por %d é %.2f", dividendo, divisor, divisao(dividendo, divisor));
 }
