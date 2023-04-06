@@ -16,11 +16,9 @@ Caso o valor do divisor seja diferente de 0
 a função ocorre normalmente, caso contrário
 a função retorna 0*/
 float retornaDivisao(int dividendo, int divisor) {
-    if(divisor==0){
-        while(divisor == 0) {
-            printf("Valor de divisor 0 é inválido!\nDigite novamente outro valor: ");
-            scanf("%d", &divisor);
-        }
+    while(divisor == 0) {
+        printf("Valor de divisor 0 é inválido!\nDigite novamente outro valor: ");
+        scanf("%d", &divisor);
     }
     return (float)dividendo/divisor;
 }
