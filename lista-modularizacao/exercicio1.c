@@ -2,7 +2,8 @@
 
 Eduardo Idalgo
 Lista Modularização
-1. Escreva um programa que implemente uma função que retorne a diferença entre dois
+1. Escreva um programa que implemente uma função
+que retorne a diferença entre dois
 números inteiros digitados pelo usuário.
 
 *******************************************************************************/
