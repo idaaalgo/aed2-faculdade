@@ -12,9 +12,9 @@ A divisão não pode ocorrer se o divisor for zero
 
 /*A função retornaDivisao recebe dividendo e divisor
 e retorna o resultado de dividendo/divisor.
-Caso o valor do divisor seja diferente de 0
-a função ocorre normalmente, caso contrário
-a função retorna 0*/
+Se o valor do divisor seja diferente de 0
+a função ocorre normalmente, se não
+a função pede um novo valor pro divisor*/
 float retornaDivisao(int dividendo, int divisor) {
     while(divisor == 0) {
         printf("Valor de divisor 0 é inválido!\nDigite novamente outro valor: ");
