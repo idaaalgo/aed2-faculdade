@@ -12,7 +12,7 @@ até que o usuário decida encerrar a operação. Operações: Depósito, Saque 
 
 float saldo = 0.00;//Definindo variável global do saldo
 
-/*função deposita receberá o valor passado pelo usuário
+/*A função deposita receberá o valor passado pelo usuário
 e fará a soma do saldo com o valor do deposito, caso o
 valor seja maior que 0*/
 void deposita(float valor) {
@@ -24,6 +24,9 @@ void deposita(float valor) {
     }
 }
 
+/*A função saque receberá o valor passado pelo usuário
+e fará a subtração do saldo com o valor do saque.
+Caso o valor seja maior que o saldo, o saque não será efetuado*/
 void saque(float valor) {
     if(valor > saldo) {
         printf("Saldo insuficiente!\n");
@@ -34,13 +37,14 @@ void saque(float valor) {
     }
 }
 
+//A função exibeSaldo printa na tela o valor da váriavel saldo
 void exibeSaldo() {
     printf("Saldo atual da conta: R$%.2f\n", saldo);
 }
 
 void main() {
     float valor;
-    int opcao;
+    int opcao;//Seleciona qual operação o caixa irá fazer
     do{
         printf("------------CAIXA ELETRÔNICO------------\n");
         printf("1- Deposito\n");
@@ -70,6 +74,6 @@ void main() {
                 printf("Operação inválida\n");
                 break;
         }
-    } while(opcao != 0);
+    } while(opcao != 0);//O programa vai rodar até que a opção escolhida seja 0
     
 }
