@@ -10,11 +10,18 @@ até que o usuário decida encerrar a operação. Operações: Depósito, Saque 
 *******************************************************************************/
 #include <stdio.h>
 
-float saldo = 0.00;
+float saldo = 0.00;//Definindo variável global do saldo
 
+/*função deposita receberá o valor passado pelo usuário
+e fará a soma do saldo com o valor do deposito, caso o
+valor seja maior que 0*/
 void deposita(float valor) {
-    saldo += valor;
-    printf("Depósito efetuado com sucesso!\n");
+    if(valor > 0) {
+        saldo += valor;
+        printf("Depósito efetuado com sucesso!\n");   
+    } else {
+        printf("Valor inválido de depósito\n");
+    }
 }
 
 void saque(float valor) {
