@@ -6,7 +6,8 @@ Lista Modularização
 
 *******************************************************************************/
 #include <stdio.h>
-
+//Função pega um inteiro que é multiplicado 3x
+//por ele mesmo retornando o valor ao cubo do número 
 int retornaCubo(int num) {
     int cubo = num * num * num;
     return cubo; 
