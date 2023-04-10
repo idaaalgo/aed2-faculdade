@@ -14,11 +14,11 @@ int retornaCubo(int num) {
 }
 
 void main() {
-    int num, cubo;
+    int num;
     printf("Entre com um número inteiro para descobrir seu valor ao cubo: \n");
     scanf("%d", &num);
-    cubo = retornaCubo(num);
-    printf("%d ao cubo é = %d", num, cubo);
+    printf("%d ao cubo é = %d", num, retornaCubo(num));
 //ou
-//  printf("%d ao cubo é = %d", num, retornaCubo(num)); 
+//  int cubo = retornaCubo(num);
+//  printf("%d ao cubo é = %d", num, cubo);
 }
