@@ -15,8 +15,10 @@ int retornaCubo(int num) {
 
 void main() {
     int num;
+    //Entrada de dados
     printf("Entre com um número inteiro para descobrir seu valor ao cubo: \n");
     scanf("%d", &num);
+//Saídas    
     printf("%d ao cubo é = %d", num, retornaCubo(num));
 //ou
 //  int cubo = retornaCubo(num);
